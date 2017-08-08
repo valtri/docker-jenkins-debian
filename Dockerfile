@@ -7,9 +7,9 @@ RUN apt-get update \
 
 RUN mkdir /var/run/sshd \
  && useradd -m -d /home/jenkins -s /bin/bash jenkins \
- && echo "jenkins:jenkins" | chpasswd \
  && sed -i '/root\tALL=/a jenkins ALL=(ALL) NOPASSWD: ALL' /etc/sudoers
 
 EXPOSE 22
 
-CMD ["/usr/sbin/sshd", "-D"]
+COPY docker-entry.sh /
+CMD ["/docker-entry.sh", "/usr/sbin/sshd", "-D"]
