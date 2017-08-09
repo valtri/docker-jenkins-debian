@@ -44,3 +44,4 @@ Steps:
 # Tags
 
 * **9**, **latest**: Debian 9 (stretch)
+* **8**: Debian 8 (jessie)
