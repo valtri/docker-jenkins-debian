@@ -13,6 +13,7 @@ Installed:
 In Jenkins:
 
 * for example with *Docker Plugin*
+* start command must be set to */docker-entry.sh /usr/sbin/sshd -D*
 
 ## Simple way
 
