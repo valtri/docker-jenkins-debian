@@ -4,7 +4,7 @@ Basic Jenkins node Debian image
 
 Installed:
 
-* Java 8 JRE headless
+* Java 8 JRE headless (Oracle java from webup8team Ubuntu PPA repository)
 * openssh server
 * sudo
 
@@ -44,3 +44,4 @@ Steps:
 # Tags
 
 * **9**, **latest**: Debian 9 (stretch)
+* **8**: Debian 8 (jessie)
