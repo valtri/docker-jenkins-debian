@@ -12,5 +12,6 @@ if ! test -d ~jenkins/.ssh; then
 	chmod 0700 ~jenkins/.ssh
 	chown -R jenkins:jenkins ~jenkins/.ssh
 fi
+rm -fv /etc/apt/apt.conf.d/docker-clean
 
 exec "$@"
