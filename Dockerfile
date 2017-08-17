@@ -8,7 +8,7 @@ RUN apt-get update \
  && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0x7B2C3B0889BF5709A105D03AC2518248EEA14886 \
  && apt-get update \
  && echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections \
- && apt-get install -y --no-install-recommends git oracle-java8-installer openssh-server sudo \
+ && apt-get install -y --no-install-recommends ca-certificates git oracle-java8-installer openssh-server sudo \
  && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /var/run/sshd \
